@@ -3,5 +3,6 @@
   "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
   "python.linting.enabled": true,
-  "git.ignoreLimitWarning": true
+  "git.ignoreLimitWarning": true,
+  "restructuredtext.confPath": "${workspaceFolder}/venv/lib/python2.7/site-packages/pbr/tests/testpackage/doc/source"
 }

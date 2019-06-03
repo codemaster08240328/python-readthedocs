@@ -10,7 +10,17 @@ Welcome to datatron's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   quickstart
+   advanced
+   refdoc
 
+Introduction
+============
+
+This is the datatron-cli tool useful for:
+
+- training model on high compute machines (also GPU's).
+- deploying model to get realtime predictions from a URL.
 
 Indices and tables
 ==================
