@@ -1,6 +1,6 @@
-####
+##########
 Quickstart
-####
+##########
 
 To operate on this quide, we assume basic knowledge of cli commands in linux and python
 

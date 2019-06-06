@@ -16,6 +16,7 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+from sphinx_rtd_theme import __version__
 
 # -- Project information -----------------------------------------------------
 
@@ -24,9 +25,10 @@ copyright = u'2019, TienDo'
 author = u'TienDo'
 
 # The short X.Y version
-version = u''
+version = __version__
 # The full version, including alpha/beta/rc tags
-release = u'0.0.1'
+# release = u'0.0.1'
+release = __version__
 
 
 # -- General configuration ---------------------------------------------------
@@ -83,7 +85,11 @@ html_theme = 'sphinx_rtd_theme'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
+html_theme_options = {
+    "logo_only": True,
+    "display_version": True
+}
+html_logo = "./_static/img/datatron-logo.png"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -177,3 +183,6 @@ epub_exclude_files = ['search.html']
 
 
 # -- Extension configuration -------------------------------------------------
+
+def setup(app):
+    app.add_stylesheet('css/custom-style.css')
